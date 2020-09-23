@@ -1,0 +1,270 @@
+17
+ 1.  Layers Demo
+ 2.  Basic Operation
+ 3.  Merge Mode ops
+ 4.  Individual picture ops
+ 5.  Drawing
+ 6.  Tracing  [TRACE]
+ 7.  Show All
+ 8.  Transparent layers
+ 9.  Colors
+10. Effects
+11. Text
+12. Undo
+13. ACTION
+14. Magnifier
+15. Caviats
+16. Included files
+17. Assembler files
+
+ 1.  Layers Demo
+     by  Robert Rayment
+     5 Aug 2003
+
+ 2.  Basic Operation
+
+   The basic operation is to load in a set of
+   pictures and press the MERGE ALL button 
+   whence the merged picture will show with
+   the default transparency (alpha) set at
+   50% for all pictures.  
+
+   In the Merge Mode the individual pictures
+   can be moved, their alpha varied, rotated,
+   resized, deleted, effects applied and pairs
+   of pictures swapped or merged.
+
+   Note that the Thumb Bar must be visible to
+   change the alpha or swap or merge pairs of
+   pictures.
+   
+   The first picture loaded (pic 0) forms the
+   background size, is always opaque and can
+   be resized but not rotated.  To select
+   other pictures click on a pic # button.
+   
+   To move, simply hold the left button down
+   on a picture and move the mouse.  To change
+   alpha, click a pic # button on the Thumb
+   Bar, move the mouse over the alpha shade
+   bar and left button to set value.
+
+   When satisfied the picture can be saved by
+   'Save Display' or 'Copy to clipboard" on the
+   FILE menu.
+
+   The speed of resizing and rotating is 
+   governed by the speed of the computer. This
+   can be controlled pressing [Set Loop Delay] 
+   on the FILE menu.  Increase the number to
+   slow down these operations.
+
+ 3.  Merge Mode ops
+
+   Apart from those mentioned above the whole
+   merged picture can be Clipped, Resized, 
+   Draw on and have Effects without coming out
+   of Merge Mode.  These operations on the
+   whole merged picture, are transitory and 
+   disappear if operations other than these 
+   are carried out.  Therefore to keep the 
+   image it needs to be saved or copied to the
+   clipboard as mentioned above.  
+
+ 4.  Individual picture ops
+
+   To show an individual picture a pic #
+   button must be pressed on the Thumb Bar.
+   This can then be Clipped, Lassoed, Resized, 
+   Rotated, Deleted, Drawn on, have Effects, 
+   Swapped or Merged with a previous picture.
+   
+   Individual pictures cannot be Lassoed,
+   Clipped or Drawn on (but see TRACE) in 
+   Merged Mode. 
+   
+   Press MERGE ALL to show the result.  
+   Separate individual pictures can be saved
+   by 'Save stored pic #' on the FILE menu.
+   Note that if in Merged Mode SHOW ALL must 
+   be pressed first to allow individual 
+   pictures to be selected. Any picture on
+   the clipboard can be loaded in as an 
+   individual picture.
+
+ 5.  Drawing
+
+   Drawing is toggled on/off by pressing the
+   [Draw_OFF/ON] buttom on the top menu.
+   This then shows a form with a description
+   of the various drawing tools. If not in
+   Merge Mode the drawing is added to the
+   individual picture.  In Merge Mode with
+   TRACE off,  the drawing is transitory and
+   only shows on the merged display.  It needs
+   to be saved to keep the picture.  See next 
+   for Tracing.  Fill will not work on to a 
+   transparent color in Merged Mode. 
+   Cross hairs can be toggled on/off for the
+   Drawing mode.
+   
+   Note that in Instructions LC means left
+   click & RC right click the mouse buttons.
+
+ 6.  Tracing  [TRACE]
+
+   Tracing can be turned on in Merge Mode
+   whenever a set of pictures is loaded and a 
+   valid pic number selected.  Then, drawing
+   in Merge Mode will transfer that drawing to
+   the rectangle of the selected picture 
+   whenever the [Add Trace to pic #] on the 
+   TRACE menu, or [ADD pic #] on the Draw 
+   frame is pressed.
+   Note that:- 
+   Blending, Erase & Fill drawing is cannot
+   be traced.
+   Transparent areas cannot be Filled with 
+   TRACE on.
+
+ 7.  Show All
+
+   This shows all the pictures on the back-
+   ground with no transparency.  It's use
+   is to move the pictures around more
+   quickly than in Merge Mode and to come
+   out of Merge Mode for individual
+   picture selection.
+
+ 8.  Transparent layers
+
+   These layers can be loaded in at any point,
+   from the FILE menu.  They are for your own 
+   Drawings.  RGB(223,223,223) is the default 
+   transparent color. These layers are named 
+   TLayer 0, TLayer 1 etc. and this name can
+   be erased with one of the Erase Drawing 
+   Tools.  The TLayers color can be changed
+   to a non-transparent one by Drawing with
+   the Fill tool - but not in Merged Mode.
+   For example if a solid color background
+   is wanted, load a transparent layer first
+   then resize and Fill color to whatever is
+   required.
+ 
+9.  Colors
+
+   Draw & Text colors can be set from the
+   standard Colors dialog.  In addition there
+   is PicA Color where colors can be picked up
+   from anywhere.  SHIFT to Set the DrawColor
+   & CTRL key to Cancel.
+
+   Note that the PicA Color tool doesn't always
+   show when the program is first started -
+   if this happens simply click for the tool
+   again.
+
+   The Draw color can also be selected from 
+   the Drawing tools form.
+
+10. Effects
+
+   Effects function on individual pictures or
+   on the whole display in Merge Mode. Noting
+   that when the effects are on the whole of
+   the Merge picture this is temporary and
+   needs to be saved to keep them.
+   See 3. above.
+
+11. Text
+
+   Pressing Text on the menu bar brings up a
+   separate window on which text can be made.
+   The Return button creates a new transparent
+   layer with the text on it.  This can be
+   left as a separate layer or merged with a
+   previous picture (nb Swap to merge with
+   other pictures).  
+
+12. Undo
+
+   Undo is limited. First, all loaded pictures
+   have their filespec remembered and can be
+   Re-loaded from the FILE menu.  There is
+   always a preview of irreversible operations,
+   allowing Accept or Cancel.  For Drawing
+   there is also Redo which removes just the
+   last drawn object.
+
+13. ACTION
+
+   The ACTION menu contains the same set of
+   operations as on the Thumb Bar plus 
+   recovering pictures that have been moved 
+   outside the background and clearing 
+   pictures.
+
+14. Magnifier
+
+   The [Magnifier] button toggles a magnifier
+   on & off.  It can be moved around by 
+   holding the left mouse button down on the
+   magnifier display.  It is particularly 
+   useful when using the Fill drawing tool
+   for filling small areas since a black dot
+   shows where the cursor hot spot is
+   located.
+
+15. Caviats
+
+   At the moment the maximum number of pictues
+   is set at the beginning of Form_Load, as is 
+   the default setting for the loop delay, the
+   a default transparent color and whether or
+   not to show instructions ie
+
+   MaxNumOfPics = 21  &
+   TLIM = 200
+   TransColor = RGB(223, 223, 223)
+   TLayerWidth = 256
+   TLayerHeight = 256
+   aShowInstructions = True
+
+   Later a preference file can be made for 
+   these. TLIM can be changed from the FILE
+   menu.
+
+16. Included files
+
+   The extra files needed are:
+   
+   Merge.bin
+   FEffects.bin
+   Rotate.bin
+   LayersHelp.txt
+
+   Again at some later point these could be 
+   included in the RES file so that the EXE
+   only requires the VB6 runtime module.
+   There are no other dependencies.
+
+17. Assembler files
+
+   Along with the *.bin files above are the
+   related assembler sources written for
+   the NASM compiler.  The bin files are
+   general enough to be used in other VB
+   progs if wanted.  So there is a method
+   for merging, anti-alias rotation and
+   some effects.  
+
+   There are lots of examples on PSC for 
+   doing this.  Basically the *.bin files
+   are loaded into a byte array and the 
+   machine code, in them, accessed using
+   the CallWindowProc API.  For each call
+   a Type structure is used to send info to
+   the machine code along with some info in
+   the CallWindowProc parameters.
+
